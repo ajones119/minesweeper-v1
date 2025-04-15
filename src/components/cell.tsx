@@ -53,7 +53,6 @@ const CellSquare: React.FC<CellProps> = ({ row, col }) => {
       // make a delay based on the index, where the index is the row * col
       const delay = row * col * 0.02; // in seconds
       timeoutRef.current = setTimeout(() => {
-        console.log("exploded");
         if (scope.current) {
           scope.current.classList.remove("exploded");
           scope.current.classList.add("reset");

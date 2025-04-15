@@ -31,7 +31,7 @@ function App() {
           className="grid"
         >
           {map.map((row, rowIndex) =>
-            row.map((cell, colIndex) => (
+            row.map((_cell, colIndex) => (
               <CellSquare
                 key={`${difficulty}-${rowIndex}-${colIndex}`}
                 row={rowIndex}
